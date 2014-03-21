@@ -42,7 +42,6 @@ public class Driver extends Configured implements Tool
      conf.setCombinerClass(Reduce.class);
      conf.setReducerClass(Reduce.class);
     
-     DBInputFormat.
      conf.setInputFormat(TextInputFormat.class);
      conf.setOutputFormat(TextOutputFormat.class);
 
