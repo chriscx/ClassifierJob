@@ -23,6 +23,9 @@ public class TF {
         this.tf    = new HashMap<String, Double>();
     }
     
+    /**
+     * 
+     */
     public void process() {
         String[] terms = doc.split("\\s");
         
@@ -42,7 +45,11 @@ public class TF {
             entry.setValue(val / terms.length);
         }
     }
-
+    
+    /**
+     * 
+     * @return 
+     */
     public HashMap<String, Double> getTF() {
         return tf;
     }

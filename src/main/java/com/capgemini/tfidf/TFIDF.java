@@ -17,8 +17,6 @@ public class TFIDF {
 
     private ArrayList<String> documents
             = new ArrayList<String>();
-//    private HashMap<Integer, HashMap<String, Double>> termFrequencies
-//            = new HashMap<Integer, HashMap<String, Double>>();
     private HashMap<String, Double> inverseDocumentFrequencies
             = new HashMap<String, Double>();
     private HashMap<String, Double> tfidf
@@ -27,10 +25,17 @@ public class TFIDF {
     private TF tf = null;
     private IDF idf = null;
 
+    /**
+     * 
+     * @param doc 
+     */
     public TFIDF(ArrayList<String> doc) {
         this.documents = doc;
     }
-
+    
+    /**
+     * 
+     */
     public void process() {
 
         idf = new IDF(documents);
@@ -61,5 +66,13 @@ public class TFIDF {
                 }
             }
         }
+    }
+
+    /**
+     * 
+     * @return 
+     */
+    public HashMap<String, Double> getTfidf() {
+        return tfidf;
     }
 }

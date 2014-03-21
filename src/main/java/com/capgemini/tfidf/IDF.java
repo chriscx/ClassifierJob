@@ -20,10 +20,17 @@ public class IDF {
     private Set<String> terms = new HashSet<String>();
     private HashMap<String, Double> idf;
 
+    /**
+     * 
+     * @param docs 
+     */
     public IDF(ArrayList<String> docs) {
         this.docs = docs;
     }
 
+    /**
+     * 
+     */
     private void prepare() {
         for (String doc : docs) {
             String[] docTerms = doc.split("\\s");
@@ -35,6 +42,9 @@ public class IDF {
         }
     }
 
+    /**
+     * 
+     */
     public void process() {
         
         this.prepare();
@@ -49,6 +59,10 @@ public class IDF {
         }
     }
 
+    /**
+     * 
+     * @return 
+     */
     public HashMap<String, Double> getIdf() {
         return idf;
     }
