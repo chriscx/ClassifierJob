@@ -58,5 +58,17 @@
             <version>2.0.0-mr1-cdh4.5.0</version>
             <type>jar</type>
         </dependency>
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-core</artifactId>
+            <version>4.6.1</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-analyzers-common</artifactId>
+            <version>4.6.1</version>
+            <type>jar</type>
+        </dependency>
     </dependencies>
 </project>
