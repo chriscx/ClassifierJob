@@ -33,8 +33,7 @@ public class CosineSimilarity {
             squareA += a * a;
             squareB += b * b;
         }
-
-        // perform the nth root with n the size of vector
-        return num / ((Math.log(size)/squareA) * (Math.log(size)/squareB));
+        
+        return num / (Math.sqrt(squareA) * Math.sqrt(squareB));
     }
 }
