@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package com.capgemini.tfidf;
+package com.chriscx.tfidf;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,6 +18,10 @@ public class TF {
     private String doc;
     private HashMap<String, Double> tf;
     
+    /**
+     * 
+     * @param doc 
+     */
     public TF(String doc) {
         this.doc    = doc;
         this.tf    = new HashMap<String, Double>();

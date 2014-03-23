@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package com.capgemini.mapred;
+package com.chriscx.mapred;
 
 import java.util.ArrayList;
 import java.util.List;

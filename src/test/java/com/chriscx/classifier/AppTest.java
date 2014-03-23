@@ -1,4 +1,4 @@
-package com.capgemini.classifier;
+package com.chriscx.classifier;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

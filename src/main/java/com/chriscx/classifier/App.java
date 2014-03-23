@@ -1,4 +1,4 @@
-package com.capgemini.classifier;
+package com.chriscx.classifier;
 
 import java.util.Arrays;
 import java.util.HashSet;

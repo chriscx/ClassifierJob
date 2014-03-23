@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package com.capgemini.similarity;
+package com.chriscx.similarity;
 
 import java.util.Vector;
 
